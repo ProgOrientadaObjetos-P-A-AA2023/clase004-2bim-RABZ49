@@ -14,10 +14,21 @@ import java.util.ArrayList;
 public class Persona {
     private String nombre;
     private int edad;
+    private Ciudad ciudad;
     
-    public Persona(String n, int e){
+    public Persona(String n, int e,Ciudad c){
         nombre = n;
         edad = e;
+        ciudad = c;
+        
+    }
+
+    public Ciudad obtenerCiudad() {
+        return ciudad;
+    }
+
+    public void esatblecerCiudad(Ciudad x) {
+        ciudad = x;
     }
     
     public void establecerNombre(String n){
